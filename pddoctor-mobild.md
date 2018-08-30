@@ -121,7 +121,7 @@ export const getDinnerDetail = (params) => (
 8.使用Promise,Object, async、await要进行编译为ES5的支持，避免出现兼容问题。
 
 > **例如一个Promise请求**
-```
+```javascript
 export const getDinnerDetail = (params) => (
     fetch({
         url: 'dinner/detail',
