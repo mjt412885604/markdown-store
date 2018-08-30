@@ -58,3 +58,16 @@ ReactDOM.render((
 http://pddocotr.com/test/one
 ```
 React Router 只会尝试匹配 `/test/one`。
+
+### 匹配路径
+React Router使用 path-to-regexp 包来判断路径的 path prop 是否匹配当前路径，它将 path 字符串转换成正则表达式与当前的路径进行匹配，关于 path 字符串更多的可选格式，可以查阅 path-to-regexp [文档](https://github.com/pillarjs/path-to-regexp)。
+
+```flow
+st=>start: 开始
+op=>operation: My Operation
+cond=>condition: Yes or No?
+e=>end
+st->op->cond
+cond(yes)->e
+cond(no)->op
+&```
