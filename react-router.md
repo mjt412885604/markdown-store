@@ -186,7 +186,7 @@ const Header = () => (
 **Note: **目前，链接的 pathname 必须是绝对路径。
 
 ### Redirect重定向
-Redirect接受一个 `to` 参数，类似于 `Link` 参数，这个组件直接执行并重定向到指定页面。
+Redirect接受一个 `to` 参数，类似于 `Link` 参数，这个组件直接执行并重定向到指定页面。
 
 > 例如
 
