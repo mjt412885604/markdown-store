@@ -185,8 +185,8 @@ const Header = () => (
 ```
 **Note: **目前，链接的 pathname 必须是绝对路径。
 
-### Redirect 重定向
-Redirect接受一个 `to` 参数，类似于 `Link` 参数，这个组件直接执行并重定向到指定页面。
+### Redirect重定向
+Redirect 接受一个 `to` 参数，类似于 `Link` 参数，这个组件直接执行并重定向到指定页面。
 
 > 例如
 
@@ -230,7 +230,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 Route路由组件规定没有 `path` 时会指向404组件，例如：
 
 ```javascript
-<Route component={NoMatch} /> // 404
+<Route component={NoMatch} />
 ```
 
 ### NavLink导航式路由
