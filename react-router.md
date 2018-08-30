@@ -294,20 +294,10 @@ var Home = ( {history,location,match})=>   <div>{location.pathname}</div>
 
 如果使用了`react-router-redux`,则可以直接从 `state` 中的`router`属性中获取`location`。不需要再使用 `withRouter` 获取路由信息了
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
