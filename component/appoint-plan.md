@@ -34,12 +34,12 @@
 3. 项目尽量模块化，分类性要强。
 4. 项目引用插件要是稳定的、在维护性的、大场的最号，能手写的插件尽量手写。
 5. 小图片尽量合并或者转码，减少网络请求量。
-6. 移动端css布局尽量使用flex布局加大开发效率。
-7. js使用es6编码方式加大开发效率。
-8. 使用Promise,Object, async、await要进行编译为ES5的支持，避免出现兼容问题。
-9. git代码提交要commit一下此次提交的改动内容。
-10. git不允许在master上面开发，最新的代码需要个人负责的项目结束后合并到master分支上。
-11. 减少git分支过多的创建，每次个人负责的项目开发完毕后删除多余的git分支，保持git分支的整洁性。
+6. 移动端css布局尽量使用`flex`布局加大开发效率。
+7. js使用`es6`编码方式加大开发效率。
+8. 使用`Promise`,`Object`, `async、await`要进行编译为ES5的支持，避免出现兼容问题。
+9. git代码提交要`commit`一下此次提交的改动内容。
+10. git不允许在`master`上面开发，最新的代码需要个人负责的项目结束后合并到`master`分支上。
+11. 减少git分支过多的创建，每次个人负责的项目开发完毕后删除多余的`git分支`，保持git分支的整洁性。
 12. 大家项目中遇到什么问题一定要及时上报与沟通避免耽误开发进度。有好的技术或者博客可以分享下。
 
 ## 项目排期
@@ -76,36 +76,36 @@
             <td>功能a</td>
             <td>首页</th>
             <td rowspan="3">马敬涛</th>
-            <td>4</th>
+            <td style="text-align:center;">4</th>
             <td rowspan="6">2018-11-20</th>
-            <td rowspan="5">佚名</td>
+            <td rowspan="5" style="text-align:center;">佚名</td>
         </tr>
         <tr>
             <td>功能a</td>
             <td>首页</th>
-            <td>4</th>
+            <td style="text-align:center;">4</th>
         </tr>
         <tr>
             <td>功能a</td>
             <td>首页</th>
-            <td>4</th>
+            <td style="text-align:center;">4</th>
         </tr>
         <tr>
             <td>功能a</td>
             <td>首页</th>
-            <td rowspan="3">mmmm</th>
-            <td>4</th>
+            <td rowspan="3">李小冉</th>
+            <td style="text-align:center;">4</th>
         </tr>
         <tr>
             <td>功能a</td>
             <td>首页</th>
-            <td>4</th>
+            <td style="text-align:center;">4</th>
         </tr>
         <tr>
             <td>功能a</td>
             <td>首页</th>
-            <td>4</th>
-            <td>佚名2</td>
+            <td style="text-align:center;">4</th>
+            <td style="text-align:center;">佚名2</td>
         </tr>
     </tbody>
 </table>
