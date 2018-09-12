@@ -1,7 +1,7 @@
 # H5-ESlint代码自动化检测
 
 ## 摘要
-时间过得很快，我来到熊猫儿科前端团队已经快三个月了，之前H5团队已经3个人了，H5团队负责的主要有`APP-webview`嵌套页面、微信公众号业务、运营后台项目，因为公司项目过多并且没有明确的分类，加上人员的变动、频繁的迭代，便会开始暴露出一些小问题。比如：
+时间过得很快，我来到熊猫儿科前端团队已经快三个月了，H5团队负责的主要有`APP-webview`嵌套页面、微信公众号业务、运营后台项目，因为公司项目过多并且没有明确的分类，加上人员的变动、频繁的迭代，便会开始暴露出一些小问题。比如：
 - 编码风格不一致
 - 有些他人写的业务逻辑，在交叉维护时，需要花更多的时间上手
 - 一些低级的 bug 在代码部署到测试环境才被发现
@@ -24,9 +24,37 @@
 
 **所以今天我们着重讲一下 `JavaScript` 自动化检测工具 `ESlint`**
 
+## ESLint简介
+`官网的简介如下:`
+```javascript
+The pluggable listing utility for JavaScript and JSX.
+支持插件的Javascript和JSX的代码检测工具
+```
+
+### 我眼中的ESLint
 `ESlint` 是在 `ECMAScript/JavaScript` 代码中识别和报告模式匹配的工具，它的目标是保证代码的一致性和避免错误。
 
-## 安装和初始化
+
+#### 功能一: 检测代码合法性
+支持`JavaScript`、`JSX`、`ES6`、`Html`、`JSDoc`、`posts`、`vue`、`React`、`AngularJS`、`React` `Native`、`mocha`等等。当然了，除了`JavaScript`与`JSX`，其他的都需要相应的插件来配合:[.可在此查看ESLint的插件列表](https://www.npmjs.com/search?q=keywords:eslintplugin)
+
+#### 功能二: 配合流行的前端构建工具
+年龄大点的`grunt`、使用广泛的`gulp`、新秀`webpack`以及`browserify`、`rollup`等等都有`ESLint`的封装版本，比如 `gulp-eslint`、`eslint-loader`等 [具体支持列表可参考这里](https://eslint.org/docs/user-guide/integrations#build-systems)
+
+#### 功能三: 代码格式化(按照eslint配置文件的规范设置) 
+`eslint –fix`:用该命令可依照`ESLint`的配置来格式化代码，你怎么定义代码规范的，他就怎么格式化。[可自动格式化规则的列表](https://eslint.org/docs/rules/), 一些复杂的代码错误,我想目前还没有任何一款软件可以帮助我们自动格式化的.
+
+#### 功能四: 结合编辑实现 代码时实检验、自动格式化
+需要结合编辑器使用, 自己亲手试验了`Sublime`、`Atom`、`Webstorm`、`VS Code`等
+
+#### 功能五:生成代码规范检测报告
+可生成各种格式的报告，也可同时生成多种格式的报告.`html`、`markdown`等格式。自己比较喜欢的插件,美化命令行输出的插件`eslint-friendly-formatter`、`eslint-formatter-pretty`，支持`Markdown`格式的插件`eslint-formatter-markdown`
+
+#### 功能六: 结合Git Hook来实现代码检测不通过则不允许提交
+
+## 下面谈谈具体怎么使用ESLint
+
+### 安装和初始化
 > 安装条件 Node.js (>=4.x), npm version 2+。
 
 1. 全局安装 eslint
@@ -48,7 +76,7 @@ eslint --init
 ```
 关于 `eslint --init` 可以不必执行，它主要的作用是在你当前文件夹下生成`.eslintrc`文件，但同时也会把eslint在你当前文件夹下重新安装一遍，并且如果你使用包的话，它还会要求必须要有 `package.json` 文件。但如果你是第一次使用的话，我建议你可以执行一下试试，它主要提供3种预安装包：**Google标准、Airbnb标准和Standard标准**。
 
-## 扩展配置
+### 扩展配置
 > 所谓扩展配置就是使用别人配置好的配置，我们选用 Airbnb 标准
 
 1. `npm install eslint-config-airbnb -g`
@@ -85,7 +113,7 @@ module.exports = {
     }
 }
 ```
-### `Rules`
+#### `Rules`
 - “off” 或 0 - 关闭规则
 - “warn” 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出)
 - “error” 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
@@ -112,7 +140,7 @@ module.exports = {
 }
 ```
 
-## 配合webpack的使用
+### 配合webpack的使用
 > 安装一个eslint-loader 的loader
 
 ```javascript
@@ -138,7 +166,7 @@ module:{
 }
 ```
 
-## React支持
+### React支持
 1. `eslint-plugin-react`
 `eslint` 是一个完全插件化的东西，所以支持特定语言也很简单。，比如我们需要支持 `react`，那么我们直接安装 `react` 插件即可：`npm install eslint-plugin-react -g`
 
