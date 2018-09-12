@@ -76,7 +76,7 @@
             <td>功能a</td>
             <td>首页</th>
             <td rowspan="3">马敬涛</th>
-            <td style="text-align:center;">4</th>
+            <td textAlign=center>4</th>
             <td rowspan="6">2018-11-20</th>
             <td rowspan="5" style="text-align:center;">佚名</td>
         </tr>
