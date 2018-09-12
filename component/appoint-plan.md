@@ -58,59 +58,6 @@
 | 合计 |  |  | 36 |  |  |
 
 
-
-***table***
-<table>
-    <thead>
-        <tr>
-            <th>模块</th>
-            <th>功能</th>
-            <th>负责人</th>
-            <th>周期（h）</th>
-            <th>提测时间</th>
-            <th>服务端</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>功能a</td>
-            <td>首页</th>
-            <td rowspan="3">马敬涛</th>
-            <td>4</th>
-            <td rowspan="6">2018-11-20</th>
-            <td rowspan="5">佚名</td>
-        </tr>
-        <tr>
-            <td>功能a</td>
-            <td>首页</th>
-            <td>4</th>
-        </tr>
-        <tr>
-            <td>功能a</td>
-            <td>首页</th>
-            <td>4</th>
-        </tr>
-        <tr>
-            <td>功能a</td>
-            <td>首页</th>
-            <td rowspan="3">李小冉</th>
-            <td>4</th>
-        </tr>
-        <tr>
-            <td>功能a</td>
-            <td>首页</th>
-            <td>4</th>
-        </tr>
-        <tr>
-            <td>功能a</td>
-            <td>首页</th>
-            <td>4</th>
-            <td>佚名2</td>
-        </tr>
-    </tbody>
-</table>
-
-
 ## 谨记
 ```text
 最初的90%的代码用去了最初90%的开发时间。余下的10%的代码用掉另外90%的开发时间。
