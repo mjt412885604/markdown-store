@@ -9,7 +9,7 @@
 - git@code.aliyun.com:pddwebclient/PanderOperate.git
 
 ## 技术架构
-> React + React-Router + React-rudex + antd + Wbbpack
+> React + React-Router + React-rudex + antd + Webpack
 
 ## 产品参与人
 - 产品：韩伟光

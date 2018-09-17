@@ -9,7 +9,7 @@
 - git@code.aliyun.com:pddwebclient/panda-wechat.git
 
 ## 技术架构
-> React + React-Router + React-rudex + weui + Wbbpack
+> React + React-Router + React-rudex + weui + Webpack
 
 ## 产品参与人
 - 产品：彭俭
