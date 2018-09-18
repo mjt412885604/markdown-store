@@ -4,6 +4,10 @@
 ## 说明
 为了提升用户端APP整体易用性，进行UI改版、原有功能和使用流程优化，同时新增部分功能以更好的满足用户诉求。
 
+## 一期时间节点
+- 一期开发时间节点：9月19-11月9号
+- 一期整体提测时间节点：11月-12
+
 ## git仓库
 - 项目名称：panda-wechat
 - git@code.aliyun.com:pddwebclient/panda-wechat.git
