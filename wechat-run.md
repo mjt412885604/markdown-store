@@ -44,9 +44,6 @@ cnpm i
 - 登录成功后拿到微信返回的openId、token
 - 点击右边开发者控制台-``application``下面的``Session Storage``会看到该域名下面的所有缓存值
 
-![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/
-u=702257389,1274025419&fm=27&gp=0.jpg)
-
 2. 启动本地项目服务
 -  ``npm run start``
 - 找到对应的文件doctorList.html
