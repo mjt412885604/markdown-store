@@ -30,6 +30,7 @@
 ## Node 的 Event Loop
 
 > Node.js也是单线程的Event Loop，但是它的运行机制不同于浏览器环境。
+
 ![avatar](../images/event-loop-2.png)
 
 根据上图，Node.js的运行机制如下：
