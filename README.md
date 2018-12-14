@@ -9,3 +9,4 @@
 - [react-redux](component/react-redux.md)
 - [react-work react工作原理](component/react-work.md)
 - [Redux 数据状态管理](component/Redux.md)
+- [Event Loop 事件环](component/event-loop.md)
