@@ -10,3 +10,5 @@
 - [react-work react工作原理](component/react-work.md)
 - [Redux 数据状态管理](component/Redux.md)
 - [Event Loop 事件环](component/event-loop.md)
+- [微信小程序](component/mini-program.md)
+- [React SSR](component/react-ssr.md)
